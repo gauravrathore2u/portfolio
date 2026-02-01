@@ -3,8 +3,41 @@
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+
+const PHRASES = ["Gaurav Rathore", "Software Engineer"];
 
 export function Hero() {
+    const [text, setText] = useState("");
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [loopNum, setLoopNum] = useState(0);
+    const [typingSpeed, setTypingSpeed] = useState(150);
+
+    useEffect(() => {
+        const ticker = setTimeout(() => {
+            const i = loopNum % PHRASES.length;
+            const fullText = PHRASES[i];
+
+            setText(isDeleting
+                ? fullText.substring(0, text.length - 1)
+                : fullText.substring(0, text.length + 1)
+            );
+
+            setTypingSpeed(isDeleting ? 50 : 150);
+
+            if (!isDeleting && text === fullText) {
+                setTypingSpeed(2000);
+                setIsDeleting(true);
+            } else if (isDeleting && text === "") {
+                setIsDeleting(false);
+                setLoopNum(loopNum + 1);
+                setTypingSpeed(500);
+            }
+        }, typingSpeed);
+
+        return () => clearTimeout(ticker);
+    }, [text, isDeleting, loopNum, typingSpeed]);
+
     return (
         <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
 
@@ -27,18 +60,15 @@ export function Hero() {
                     </div>
                 </motion.div>
 
-                <motion.h1
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                >
-                    Software Engineer
-                    <br />
-                    <span className="text-muted-foreground text-3xl md:text-5xl lg:text-6xl font-normal">
-                        Specializing in Node.js, React & TS
-                    </span>
-                </motion.h1>
+                <div className="flex flex-col items-center min-h-[120px] md:min-h-[160px] justify-center">
+                    <h1
+                        className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70"
+                        suppressHydrationWarning
+                    >
+                        {text}
+                        <span className="animate-pulse text-foreground">|</span>
+                    </h1>
+                </div>
 
                 <motion.p
                     className="max-w-[600px] text-muted-foreground text-lg md:text-xl mb-8"

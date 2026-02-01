@@ -20,7 +20,7 @@ export function Navbar() {
             className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center p-4"
         >
             <nav className="flex items-center gap-2 md:gap-4 bg-background/80 backdrop-blur-md border border-border/40 rounded-full px-4 md:px-6 py-3 shadow-lg max-w-[95vw] overflow-x-auto no-scrollbar">
-                <span className="font-bold text-lg mr-4 hidden md:block">Gaurav</span>
+
 
                 <div className="flex items-center gap-1">
                     <Button variant="ghost" size="sm" className="rounded-full" onClick={() => scrollToSection('hero')}>About</Button>
