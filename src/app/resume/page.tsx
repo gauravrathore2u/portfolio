@@ -76,7 +76,7 @@ const projects = [
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
     return (
-        <h2 className="text-[11pt] font-bold uppercase tracking-[0.15em] text-resume-accent border-b border-resume-border pb-1 mb-3 mt-5 first:mt-0">
+        <h2 className="text-[11pt] font-bold uppercase tracking-[0.15em] text-resume-accent border-b border-resume-border pb-1 mb-3 mt-8 first:mt-0">
             {children}
         </h2>
     );
@@ -150,7 +150,7 @@ export default function ResumePage() {
                 {/* Experience */}
                 <section>
                     <SectionTitle>Experience</SectionTitle>
-                    <div className="space-y-4">
+                    <div className="space-y-2.5">
                         {experiences.map((exp) => (
                             <div key={exp.company} className="break-inside-avoid">
                                 <div className="flex justify-between items-baseline gap-4">
@@ -172,7 +172,7 @@ export default function ResumePage() {
                 {/* Projects */}
                 <section>
                     <SectionTitle>Projects</SectionTitle>
-                    <div className="space-y-3">
+                    <div className="space-y-2.5">
                         {projects.map((p) => (
                             <div key={p.name} className="break-inside-avoid">
                                 <div className="flex justify-between items-baseline gap-4">
@@ -250,10 +250,14 @@ export default function ResumePage() {
                         font-size: 22pt !important;
                     }
                     .resume-doc h2 {
-                        margin-top: 10pt !important;
+                        margin-top: 14pt !important;
                         margin-bottom: 4pt !important;
                         padding-bottom: 2pt !important;
                         font-size: 10pt !important;
+                    }
+                    .resume-doc h2.first\\:mt-0:first-child,
+                    .resume-doc section:first-of-type h2 {
+                        margin-top: 0 !important;
                     }
                     .resume-doc h3 {
                         font-size: 10pt !important;
@@ -261,11 +265,8 @@ export default function ResumePage() {
                     .resume-doc header {
                         margin-bottom: 8pt !important;
                     }
-                    .resume-doc section > div.space-y-4 > * + * {
-                        margin-top: 6pt !important;
-                    }
-                    .resume-doc section > div.space-y-3 > * + * {
-                        margin-top: 6pt !important;
+                    .resume-doc section > div[class*="space-y-"] > * + * {
+                        margin-top: 4pt !important;
                     }
                     .resume-doc ul {
                         margin-top: 2pt !important;
