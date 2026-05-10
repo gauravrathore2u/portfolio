@@ -19,9 +19,9 @@ const experiences = [
         role: "Senior Software Engineer",
         period: "Mar 2026 – Present",
         bullets: [
-            "Leading end-to-end development of the Audit Management module (React, MUI, Redux Toolkit), driving UX decisions directly with stakeholders.",
             "Owning document and e-signature workflows via Docuseal integration for scheduling and contract execution.",
             "Driving feature flag strategy with PostHog, enabling controlled rollouts and A/B experimentation.",
+            "Establishing observability with Winston and GlitchTip, improving incident response in an agile environment.",
         ],
     },
     {
@@ -32,7 +32,7 @@ const experiences = [
             "Engineered backend foundation of a multi-tenant HRMS SaaS as the primary contractor — Node.js, Express, TypeScript.",
             "Architected a microservices system with Docker, enabling independent deployments and horizontal scalability.",
             "Built secure REST APIs using InversifyJS with fine-grained RBAC, enforcing strict access control across tenant boundaries.",
-            "Established observability with Winston and GlitchTip, improving incident response in an agile environment.",
+            "Led end-to-end development of the Audit Management module (React, MUI, Redux Toolkit), driving UX decisions directly with stakeholders.",
         ],
     },
     {

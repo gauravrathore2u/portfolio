@@ -19,15 +19,15 @@ Noida, Uttar Pradesh
 ## Experience
 
 ### Senior Software Engineer, Floes — *Mar 2026 – Present*
-- Leading end-to-end development of the Audit Management module (React, MUI, Redux Toolkit), driving UX decisions directly with stakeholders.
 - Owning document and e-signature workflows via Docuseal integration for scheduling and contract execution.
 - Driving feature flag strategy with PostHog, enabling controlled rollouts and A/B experimentation.
+- Establishing observability with Winston and GlitchTip, improving incident response in an agile environment.
 
 ### Software Engineer, IOPSHub (Floes) — *Feb 2024 – Feb 2026*
 - Engineered backend foundation of a multi-tenant HRMS SaaS as the primary contractor — Node.js, Express, TypeScript.
 - Architected a microservices system with Docker, enabling independent deployments and horizontal scalability.
 - Built secure REST APIs using InversifyJS with fine-grained RBAC, enforcing strict access control across tenant boundaries.
-- Established observability with Winston and GlitchTip, improving incident response in an agile environment.
+- Led end-to-end development of the Audit Management module (React, MUI, Redux Toolkit), driving UX decisions directly with stakeholders.
 
 ### Full Stack Developer, Designoweb Technologies — *Sep 2023 – Jan 2024*
 - Built mental health CRM backend (Express, TypeORM, PostgreSQL), deployed on AWS EC2 with NGINX.
