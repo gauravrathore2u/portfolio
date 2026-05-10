@@ -32,7 +32,7 @@ const experiences = [
             "Engineered backend foundation of a multi-tenant HRMS SaaS as the primary contractor — Node.js, Express, TypeScript.",
             "Architected a microservices system with Docker, enabling independent deployments and horizontal scalability.",
             "Built secure REST APIs using InversifyJS with fine-grained RBAC, enforcing strict access control across tenant boundaries.",
-            "Led end-to-end development of the Audit Management module (React, MUI, Redux Toolkit), driving UX decisions directly with stakeholders.",
+            // "Led end-to-end development of the Audit Management module (React, MUI, Redux Toolkit), driving UX decisions directly with stakeholders.",
         ],
     },
     {
@@ -134,6 +134,16 @@ export default function ResumePage() {
                         </a>
                     </div>
                 </header>
+
+                {/* Summary */}
+                <section>
+                    <SectionTitle>Summary</SectionTitle>
+                    <p>
+                        Senior Software Engineer with 4 years building scalable SaaS products across Node.js, React, and TypeScript.
+                        Primary backend contractor for a multi-tenant HRMS at Floes; building AI-augmented tools with RAG and LLMs
+                        alongside production work.
+                    </p>
+                </section>
 
                 {/* Skills */}
                 <section>

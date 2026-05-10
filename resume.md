@@ -5,6 +5,12 @@ Noida, Uttar Pradesh
 
 ---
 
+## Summary
+
+Senior Software Engineer with 4 years building scalable SaaS products across Node.js, React, and TypeScript. Primary backend contractor for a multi-tenant HRMS at Floes; building AI-augmented tools with RAG and LLMs alongside production work.
+
+---
+
 ## Skills
 
 - **Programming:** JavaScript, TypeScript, Python
