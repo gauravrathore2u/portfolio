@@ -6,10 +6,17 @@ import { Badge } from "@/components/ui/badge";
 
 const experiences = [
     {
-        company: "IOPSHub",
+        company: "Floes",
+        role: "Senior Software Engineer",
+        period: "Mar 2026 - Present",
+        description: "Leading end-to-end development of the Audit Management module with React, MUI, and Redux Toolkit. Owning document and e-signature workflows via Docuseal, and driving feature flag rollouts with PostHog.",
+        skills: ["React.js", "MUI", "Redux Toolkit", "Docuseal", "PostHog"]
+    },
+    {
+        company: "IOPSHub (Floes)",
         role: "Software Engineer",
-        period: "Feb 2024 - Present",
-        description: "Built HRMS SaaS with Microservices, Docker, and Permify authorization. Integrated Docuseal for e-signatures.",
+        period: "Feb 2024 - Feb 2026",
+        description: "Built HRMS SaaS with Microservices, Docker, and InversifyJS RBAC authorization. Integrated Docuseal for e-signatures and established observability with Winston and GlitchTip.",
         skills: ["Node.js", "Microservices", "Docker", "PostgreSQL"]
     },
     {

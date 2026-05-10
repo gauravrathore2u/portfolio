@@ -21,13 +21,18 @@ const skillCategories = [
     {
         title: "Databases & Tools",
         skills: ["PostgreSQL", "MongoDB", "Redis", "Docker", "Kafka", "AWS (EC2)", "Git", "NGINX"]
+    },
+    {
+        title: "Artificial Intelligence",
+        skills: ["RAG", "LangChain", "Prompt Engineering", "OpenAI", "Claude", "Vector DB"]
     }
 ];
 
 const portfolioSlugs = [
     "javascript", "typescript", "java",
     "nodedotjs", "express", "nestjs", "jest", "docker", "postgresql", "mongodb", "redis", "apachekafka", "amazonaws", "git", "nginx",
-    "react", "nextdotjs", "mui", "redux", "html5", "css3", "tailwindcss", "framer"
+    "react", "nextdotjs", "mui", "redux", "html5", "css3", "tailwindcss", "framer",
+    "langchain", "openai", "anthropic"
 ];
 
 const images = portfolioSlugs.map(

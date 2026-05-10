@@ -5,7 +5,7 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
-const PHRASES = ["Gaurav Rathore", "Software Engineer"];
+const PHRASES = ["Gaurav Rathore", "Senior Software Engineer"];
 
 export function Hero() {
     const [text, setText] = useState("");
